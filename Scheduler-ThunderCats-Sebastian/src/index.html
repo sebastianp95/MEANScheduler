@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Faculty Scheduler</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <div style="text-align:center">
+      <img width=100% alt="GGC Banner" src="/assets/banner.png">
+    </div>
+</head>
+<body background-color="white" >
+
+
+<app-root></app-root>
+
+  <div class="footer">
+    <br/><p><small>footer.</small></p>
+  </div>
+
+<!---->
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+    function myFunction() {
+        var x = document.getElementById("heady");
+        x.style.display = "block";
+        var y = document.getElementById("subby");
+        y.style.display = "block";
+    }
+
+  </script>
+
+
+</body>
+</html>
